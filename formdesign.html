@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="menu-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+      </div> 
+        <h1>
+            Docs scanner
+        </h1>
+        <div class="mag"></div>
+        <div class="menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+      </div> 
+    </div>
+    <hr>
+    <center>
+        <h3 class="doc"> All docs</h3>
+    </center>
+    <hr>
+    <center>
+        <h3 class="cod"> No document yet</h3>
+    </center>
+      <button ><h2>Camera|Gallery </h2></button>
+
+   
+    <style>
+        .doc{
+            padding: 8px;
+            
+        }
+        .cod{
+            margin-top: 100px;
+         }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            background-color: black;
+             color: white;
+        }
+        h1{
+            margin-left: 35px;
+            padding: 25px;
+            display: inline-block;
+        }
+        .menu-icon{
+            display: inline-block;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .menu-icon div{
+            width: 35px;
+            height: 5px;
+            background-color: white;
+            margin: 6px ;
+            transition: 0.4s;
+         }
+         button{
+            margin-top: 25%;
+            background-color:dodgerblue;
+            color: white;
+            margin-left: 80%;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 50px;
+        }
+        .menu{
+            display: inline-block;
+            margin-left: 100px;
+          }
+        .bar{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: white;
+          }
+         .mag{
+            font-size: 4em;
+            display: inline-block;
+            width: 0.4em;
+            border: 0.1em solid white;
+            box-sizing: content-box;
+            height: 0.4em;
+            position: relative;
+            border-radius: 0.35em;
+            margin-left: 1000px;
+        }
+        .mag::before{
+            content: "";
+            display: inline-block;
+            position: absolute;
+            right: -0.25em;
+            bottom: -0.1em;
+            border-width: 0;
+            background: white;
+            width: 0.35em;
+            height: 0.08em;
+            transform: rotate(45deg);
+ 
+        }
+        }
+    </style>
+    
+</body>
+</html>
